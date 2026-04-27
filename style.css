@@ -1,4 +1,4 @@
-/* =============================================
+﻿/* =============================================
    RESET & BASE
    ============================================= */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -259,7 +259,7 @@ a { text-decoration: none; color: inherit; }
   width: 100%;
 }
 .hero-photo.no-photo::after {
-  content: 'francisco.jpg';
+  content: 'imagenes/francisco.jpg';
   position: absolute;
   font-size: 12px;
   color: var(--muted);
