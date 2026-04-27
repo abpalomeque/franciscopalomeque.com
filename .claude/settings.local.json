@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python3:*)",
+      "Read(//c/Users/abrah/AppData/Local/Programs//**)",
+      "Bash(ls /c/Python*)",
+      "Read(//c//**)",
+      "Read(//c/Program Files//**)",
+      "Bash(cmd.exe /c \"where node & where python & where py & where python3\")",
+      "Bash(cmd.exe /c \"where node\")",
+      "Bash(cmd.exe /c \"where python\")",
+      "Bash(cmd.exe /c \"node --version\")",
+      "Bash(echo $PATH)",
+      "Bash(ls '/c/Program Files \\(x86\\)/nodejs/')",
+      "Bash(dotnet --version)",
+      "Read(//usr/**)",
+      "Bash(powershell.exe -Command \"Get-Process | Where-Object { $_.ProcessName -eq ''powershell'' } | Stop-Process -Force\")",
+      "Bash(pandoc --track-changes=all \"La guerra que China no pelea.docx\" -o /tmp/china_article.md)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

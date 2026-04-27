@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Francisco J. Palomeque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FP</a>
+      <ul class="nav-links">
+        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="index.html#experiencia">Experiencia</a></li>
+        <li><a href="index.html#formacion">Formación</a></li>
+        <li><a href="blog.html" class="nav-active">Blog</a></li>
+        <li><a href="index.html#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html#sobre-mi">Sobre mí</a>
+      <a href="index.html#experiencia">Experiencia</a>
+      <a href="index.html#formacion">Formación</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="blog-hero-bg"></div>
+    <div class="container blog-hero-content">
+      <span class="section-label">Ideas · Reflexiones · Análisis</span>
+      <h1 class="blog-hero-title">Blog</h1>
+      <p class="blog-hero-sub">Política, gobernabilidad y comunicación estratégica desde una perspectiva académica y práctica.</p>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <section class="blog-filters-bar">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="comunicacion">Comunicación</button>
+        <button class="filter-btn" data-filter="gobernabilidad">Gobernabilidad</button>
+        <button class="filter-btn" data-filter="internacional">Internacional</button>
+        <button class="filter-btn" data-filter="politica">Política</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULOS -->
+  <section class="blog-section">
+    <div class="container">
+
+      <!-- ARTÍCULO DESTACADO -->
+      <article class="post-featured fade-up" data-category="internacional">
+        <div class="post-featured-image">
+          <img src="la-guerra-china.png" alt="La guerra que China no pelea… pero sí controla" style="width:100%; height:100%; object-fit: cover;" />
+        </div>
+        <div class="post-featured-body">
+          <div class="post-meta">
+            <span class="post-category">Internacional</span>
+            <span class="post-date">3 de abril, 2026</span>
+          </div>
+          <h2 class="post-featured-title">
+            <a href="la-guerra-china.html">La guerra que China no pelea… pero sí controla</a>
+          </h2>
+          <p class="post-excerpt">Estados Unidos tiene reservas militares de tierras raras para dos meses de combate sostenido. China acaba de votar en el Consejo de Seguridad de la ONU para prolongar la guerra que las consume. El mismo país controla el suministro y el veto.</p>
+          <a href="la-guerra-china.html" class="post-read-more">
+            Leer artículo <span class="arrow">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- GRID DE ARTÍCULOS -->
+      <div class="posts-grid">
+
+        <article class="post-card fade-up" data-category="politica">
+          <div class="post-card-image">
+            <img src="comunicacion.png" alt="El liderazgo político en tiempos de alta incertidumbre" style="width:100%; height:100%; object-fit: cover;" />
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta">
+              <span class="post-category">Política</span>
+              <span class="post-date">27 mar, 2026</span>
+            </div>
+            <h3 class="post-card-title">
+              <a href="comunicacion.html">El liderazgo político en tiempos de alta incertidumbre: entre la técnica y el carácter</a>
+            </h3>
+            <p class="post-excerpt">La gobernabilidad exige método, visión y una profunda comprensión del comportamiento ciudadano. No se trata solo de tomar decisiones acertadas, sino de tomarlas en el momento correcto...</p>
+            <a href="comunicacion.html" class="post-read-more">Leer más <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="post-card fade-up delay-1" data-category="comunicacion">
+          <div class="post-card-image">
+            <img src="comunicacion-de-crisis.jpeg" alt="Comunicación de crisis: cómo hablar cuando todo está en llamas" style="width:100%; height:100%; object-fit: cover;" />
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta">
+              <span class="post-category">Comunicación</span>
+              <span class="post-date">20 mar, 2026</span>
+            </div>
+            <h3 class="post-card-title">
+              <a href="comunicacion-de-crisis.html">Comunicación de crisis: cómo hablar cuando todo está en llamas</a>
+            </h3>
+            <p class="post-excerpt">La primera regla de la comunicación de crisis no es hablar rápido, es hablar bien. Un mensaje incorrecto en el momento equivocado puede amplificar el daño exponencialmente...</p>
+            <a href="comunicacion-de-crisis.html" class="post-read-more">Leer más <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="post-card fade-up delay-2" data-category="gobernabilidad">
+          <div class="post-card-image">
+            <img src="instituciones-debiles.jpg" alt="Instituciones débiles y democracias frágiles: el caso latinoamericano" style="width:100%; height:100%; object-fit: cover;" />
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta">
+              <span class="post-category">Gobernabilidad</span>
+              <span class="post-date">13 mar, 2026</span>
+            </div>
+            <h3 class="post-card-title">
+              <a href="instituciones-debiles.html">Instituciones débiles y democracias frágiles: el caso latinoamericano</a>
+            </h3>
+            <p class="post-excerpt">La fortaleza de una democracia no se mide por la frecuencia de sus elecciones, sino por la solidez de sus instituciones. En Latinoamérica, esta distinción sigue siendo urgente...</p>
+            <a href="instituciones-debiles.html" class="post-read-more">Leer más <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">FP</span>
+      <p>© 2026 Francisco J. Palomeque. Ecuador.</p>
+      <nav class="footer-nav">
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>
