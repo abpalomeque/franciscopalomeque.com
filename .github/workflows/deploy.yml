@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,3 +28,4 @@ jobs:
             .claude/**
             article_extracted.txt
             serve.ps1
+            .github/**
